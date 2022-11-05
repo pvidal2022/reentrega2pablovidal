@@ -1,0 +1,352 @@
+*{margin: 0}
+*{padding: 0}
+
+
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+
+.bi-facebook{
+color: black;
+font-size: 40px;
+}
+
+
+.bi-facebook:hover{
+color: blue;
+}
+
+
+.bi-twitter{
+color: black;
+font-size: 40px;
+}
+
+
+.bi-twitter:hover{
+color: lightblue
+}
+
+
+.bi-instagram{
+color: black;
+font-size: 40px;
+}
+
+
+.bi-instagram:hover{
+color: indigo;
+}
+
+
+.grilla{
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: auto 1fr auto auto;
+grid-template-areas: "1header"
+                     "2nav"
+                     "3main"
+                     "4footer";
+
+
+min-height: 100vh;
+
+
+
+
+}
+
+
+header{
+width: 100%;
+background-color: white;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
+
+
+
+}
+
+
+nav{
+background-color: white;
+
+
+}
+
+
+ul{
+display:flex;
+flex-direction: column;
+height: 100%;
+justify-content: space-evenly;
+align-items: center;
+list-style-type: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: olivedrab;
+    font-size: 35px;
+}
+
+
+
+
+.grid_section{
+display:grid;
+grid-template-columns: 50% 50%;
+grid-template-rows: 10% 70% 10%;
+
+
+
+
+grid-template-areas: "img titulo"
+                     "img parrafo"
+                     "img boton";
+
+
+justify-content: space-around;
+align-content: space-evenly;
+justify-items: center;
+align-items: center;
+
+
+
+
+
+
+}
+
+
+h1{
+color: red;
+height: 100%;
+width: 100%;
+font-style: italic;
+font-weight: 500px;
+font-size: 55px;
+text-decoration: underline;
+}
+
+
+
+
+.img_section{
+width: 80%;
+height: 80%;
+
+
+grid-area:img;
+}
+
+
+#grid_main{
+display: flex;
+flex-direction: column;
+
+
+
+
+}
+
+
+.imagenbanner{
+width: 100%;
+height: 100%;
+max-height: 50%;
+object-fit: contain;
+
+
+}
+
+
+footer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+background-image: linear-gradient(to left, orange, red);
+
+
+}
+
+
+.pfooter{
+font-size: 15px;
+margin-top: 10px;
+}
+
+
+.campoimagen{
+width: 100%;
+height: 100%;
+max-height: 100%;
+object-fit: contain;
+filter: grayscale(100%);
+}
+
+
+.campoimagen:hover{
+filter: grayscale(0%);
+border-radius: 5%;
+transition: 3s;
+
+
+}
+
+
+.divdetres{
+height: auto;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content:center;
+align-items: center;
+justify-content: space-around;
+font-size: 20px;
+color: blue;
+font-weight: 50px;
+
+
+}
+
+
+
+
+.prueba1{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.grillaqs{
+display:grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: auto auto auto;
+
+
+
+
+grid-template-areas: "a1 a2 a3"
+                     "a4 a5 a6"
+                     "a7 a8 a9"
+
+
+
+
+}
+
+
+
+
+.imgqs1{
+
+
+grid-area: a1
+}
+
+
+.imgqs1:hover{
+transform: rotate(45deg);
+}
+
+
+.imgqs2{
+grid-area: a2;
+}
+
+
+.imgqs2:hover{
+transform: rotate(45deg);
+}
+
+
+.imgqs3{
+grid-area: a3;
+}
+
+
+.imgqs3:hover{
+transform: rotate(45deg);
+}
+
+
+.tituloqs1{
+grid-area: a4;
+}
+
+
+.tituloqs2{
+grid-area: a5;
+}
+
+
+.tituloqs3{
+grid-area: a6;
+}
+
+
+
+
+.imagenfruta{
+    animation-name: colorfruta;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes colorfruta{
+from{opacity: 0;}
+
+
+to{opacity: 100;}
+}
+
+
+@media only screen and (max-width: 600px){
+
+
+}
+
+
+@media only screen and (min-width: 600px){
+
+
+ul{
+    flex-direction: row;}
+
+
+
+
+
+
+.div_prod{
+    display: flex;
+    flex-direction: row;}
+
+
+.titulo_section{
+    font-size: 20px;
+}
+
+
+.butera{
+    width: 80%;
+    height: 25px;
+
+
+}
+
+
+.grid_section a{
+    font-size: 15px;
+    color: green;
+}
+
+
+}
